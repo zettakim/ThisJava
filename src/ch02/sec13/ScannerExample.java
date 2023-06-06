@@ -20,7 +20,18 @@ public class ScannerExample {
         System.out.println("x + y = " + result);
         System.out.println();
 
+        while (true) {
+            System.out.print("입력 문자열: ");
+            String data = scanner.nextLine();
+            if (data.equals("q")) {
+                break;
+            }
+            System.out.println("출력 문자열: " + data);
+            System.out.println();
+        }
+
         scanner.close();
+        System.out.println("종료");
     }
 
 }
